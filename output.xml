@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200220 23:38:02.543" generator="Robot 3.1.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Anindya\eclipse-workspace\RobotProject" id="s1" name="RobotProject">
+<suite source="C:\Users\Anindya\eclipse-workspace\RobotProject\test" id="s1-s1" name="Test">
+<suite source="C:\Users\Anindya\eclipse-workspace\RobotProject\test\TestSuite1.robot" id="s1-s1-s1" name="TestSuite1">
+<test id="s1-s1-s1-t1" name="LoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200220 23:38:04.928" level="INFO">Opening browser 'chrome' to base url 'https://web.latotools.com/pls/rt5.v3.strategydemo.dev/lato.platform.v3'.</msg>
+<status status="PASS" endtime="20200220 23:38:12.038" starttime="20200220 23:38:04.927"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200220 23:38:12.054" starttime="20200220 23:38:12.040"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=p_user_name</arg>
+<arg>@{Credentials}[0]</arg>
+</arguments>
+<msg timestamp="20200220 23:38:12.056" level="INFO">Typing text 'lato' into text field 'id=p_user_name'.</msg>
+<status status="PASS" endtime="20200220 23:38:12.214" starttime="20200220 23:38:12.055"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=p_user_pwd</arg>
+<arg>@{Credentials}[1]</arg>
+</arguments>
+<msg timestamp="20200220 23:38:12.216" level="INFO">Typing password into text field 'id=p_user_pwd'.</msg>
+<status status="PASS" endtime="20200220 23:38:12.367" starttime="20200220 23:38:12.215"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>class=login_submit</arg>
+</arguments>
+<msg timestamp="20200220 23:38:12.369" level="INFO">Clicking button 'class=login_submit'.</msg>
+<status status="PASS" endtime="20200220 23:38:13.533" starttime="20200220 23:38:12.368"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200220 23:38:15.828" starttime="20200220 23:38:13.537"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200220 23:38:15.834" level="INFO">Test Completed</msg>
+<status status="PASS" endtime="20200220 23:38:15.835" starttime="20200220 23:38:15.830"></status>
+</kw>
+<doc>This is a login test</doc>
+<status status="PASS" endtime="20200220 23:38:15.837" critical="yes" starttime="20200220 23:38:04.926"></status>
+</test>
+<status status="PASS" endtime="20200220 23:38:15.842" starttime="20200220 23:38:02.793"></status>
+</suite>
+<status status="PASS" endtime="20200220 23:38:15.857" starttime="20200220 23:38:02.787"></status>
+</suite>
+<status status="PASS" endtime="20200220 23:38:15.869" starttime="20200220 23:38:02.727"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="RobotProject" pass="1">RobotProject</stat>
+<stat fail="0" id="s1-s1" name="Test" pass="1">RobotProject.Test</stat>
+<stat fail="0" id="s1-s1-s1" name="TestSuite1" pass="1">RobotProject.Test.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
